@@ -37,12 +37,12 @@ function ap(dt, t, cl, am, location){
     cc++;
     if(t==="diary") {
         let iMg = "", noImgClass = "has-i-m-g";
-        dt.image.length > 0 ? iMg = 'background-image: url(https://mouzey406.github.io/Diary/images/'+dt.image.split("/")[2]+')' : (iMg = 'background-color:var(--bg3)', noImgClass = "no-i-m-g")
+        dt.image.length > 0 ? iMg = 'background-image: url(https://mozaski.github.io/Diary/images/'+dt.image.split("/")[2]+')' : (iMg = 'background-color:var(--bg3)', noImgClass = "no-i-m-g")
         let d = document.createElement("div");
         d.innerHTML = `
           <div class="i-c-bg p-sm p-r" data-cc="${cc}" style="${iMg}"><h4>${dt.title}</h4><p>${dt.text}</p><span class="n-d-t">${daT(dt.date, false)}</span><div class="c-d-ls p-sm"><div class="flex j-c-b"><div>${dt.status === "active" ? `<span class="i-c-o-n-2 e-d-i-t"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pencil-fill e-d-i-t" viewBox="0 0 16 16">
   <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-</svg><bdi class="e-d-i-t">Edit</bdi></span>` : ''}</div><div class="p-r s-lg"><button type="button" class="i-c-o-n-2 s-o-n ac-t-i-o-ns"><img src="https://mouzey406.github.io/Diary/images/menu.svg"></button></div><div class="s-sm d-i-c-cc">
+</svg><bdi class="e-d-i-t">Edit</bdi></span>` : ''}</div><div class="p-r s-lg"><button type="button" class="i-c-o-n-2 s-o-n ac-t-i-o-ns"><img src="https://mozaski.github.io/Diary/images/menu.svg"></button></div><div class="s-sm d-i-c-cc">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="d-i-c-cc" viewBox="0 0 24 24" width="16" height="16"><path d="M21,4H17.9A5.009,5.009,0,0,0,13,0H11A5.009,5.009,0,0,0,6.1,4H3A1,1,0,0,0,3,6H4V19a5.006,5.006,0,0,0,5,5h6a5.006,5.006,0,0,0,5-5V6h1a1,1,0,0,0,0-2ZM11,2h2a3.006,3.006,0,0,1,2.829,2H8.171A3.006,3.006,0,0,1,11,2Zm7,17a3,3,0,0,1-3,3H9a3,3,0,0,1-3-3V6H18Z"></path><path d="M10,18a1,1,0,0,0,1-1V11a1,1,0,0,0-2,0v6A1,1,0,0,0,10,18Z"></path><path d="M14,18a1,1,0,0,0,1-1V11a1,1,0,0,0-2,0v6A1,1,0,0,0,14,18Z"></path></svg>
               <bdi class="d-i-c-cc">Delete</bdi>
           </div></div></div>
@@ -196,7 +196,7 @@ function hdp(to, a) {
     n.forEach(m=>m.value = to[m.title.toLowerCase()])
     let q;
     if(to.image.length < 1) {_e(".c--main.a-ctiv-e").style.backgroundImage=`none`; _e(".c--main.a-ctiv-e").classList.remove("has-img"); q = _e(".i-n-n")} 
-   else { _e(".c--main.a-ctiv-e").style.backgroundImage=`url(https://mouzey406.github.io/Diary/images/${to.image.split("/")[2]})`; _e(".c--main.a-ctiv-e").classList.add("has-img"); q =  _e(`[data-rep='${spt(to.image, 9, 12)}']`).closest(".i-m-g-d-p"); }
+   else { _e(".c--main.a-ctiv-e").style.backgroundImage=`url(https://mozaski.github.io/Diary/images/${to.image.split("/")[2]})`; _e(".c--main.a-ctiv-e").classList.add("has-img"); q =  _e(`[data-rep='${spt(to.image, 9, 12)}']`).closest(".i-m-g-d-p"); }
     aCtivE(q, "add", [".i-m-g-d-p.a-ctiv-e"]);
     refresh("form#d-iar-y", a, "diary");
     if(iPh()) fdTmt = setTimeout(()=>{_e(".z-tt").classList.add("fd-Dwn")},3000);
@@ -262,3 +262,4 @@ const sh = dt => {
 }
 
 nonce()
+
